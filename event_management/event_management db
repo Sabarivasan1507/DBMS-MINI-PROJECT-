@@ -1,0 +1,18 @@
+-- Create the event management database
+CREATE DATABASE event_management;
+
+-- Use the created database
+USE event_management;
+
+-- Create the events table
+CREATE TABLE events (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT NOT NULL,
+    date DATE NOT NULL
+);
+
+-- Insert sample data into the events table
+INSERT INTO events (title, description, date) VALUES 
+('Music Concert', 'An exciting live music event featuring top artists.', '2024-12-25'),
+('Tech Conference', 'A tech event showcasing the latest innovations in technology.', '2024-11-30');
